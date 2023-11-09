@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple JavaScript Function</title>
+  </head>
+  <body>
+    <p id="output">This is some initial text.</p>
+    <button onclick="updateText('New text!!!!!!!!!!!!!!!!!!!!')">Click me</button>
+
+    <script>
+      // JavaScript function that takes a parameter and updates the content of a paragraph element
+      function updateText(newText) {
+        // Get the paragraph element by its ID
+        var outputElement = document.getElementById("output");
+
+        // Update the content of the paragraph using innerHTML
+        outputElement.innerHTML = newText;
+      }
+    </script>
+  </body>
+</html>

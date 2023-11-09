@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="utskrift" ></p>
+
+  <script>
+const ITF19019_grade = "A"
+const ITF10511_grade = "F"
+
+const ITF19019_passed = ITF19019_grade =="F" ? false : true;/*hvis den er noe annet enn F, da skal den være true betyr dette*/ 
+const ITF10511_passed = ITF10511_grade =="F" ? false : true;
+console.log(ITF10511_passed);
+console.log(ITF19019_passed);
+let countPassed = 0;
+//ITF19019 med tradisjonell if
+if(ITF19019_grade === true){
+  countPassed++
+}
+//ITF10511 som en termary operator
+ITF10511_passed ? countPassed++ : null
+const printText = `Du har bestått ${countPassed} av 2 kurs`
+document.getElementById("utskrift").innerHTML = printText;
+
+  </script>
+</body>
+</html>

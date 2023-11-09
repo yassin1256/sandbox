@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <li id="utskrift1"></li>
+  <strong>Hva heter personen over?<input type="text" id="inPut" ></strong>
+  <script>
+    var navn = "Yassin Ibrahim";
+    var utskrift = "";
+    var personsomskriver = document.getElementById("utskrift1");
+    if  (navn === "Yassin Ibrahim"){
+      utskrift = "Mitt navn er Yassin Ibrahim";
+    } else {
+      utskrift = "Mitt navn er ikke " + navn;
+    }
+    var print = ``;
+var word1 = "nice";
+var word2 = "bad";
+     if (persomskriver === navn) {
+     var print = `<li>${word1}</li>`;
+     } else {
+      var print = `<li>${word2}</li>`;
+     }
+
+
+
+    document.getElementById("utskrift1").innerHTML = 
+    document.getElementById("utskrift").innerHTML = utskrift;
+  </script>
+</body>
+</html>

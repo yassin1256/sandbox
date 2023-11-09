@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="getPromtBack">Was it a succsess?</button>
+  <script>
+
+var studentcode = 555;
+var WhatStudentWrites = prompt("Enter code now!");
+function ww(){
+if ( studentcode == WhatStudentWrites) { 
+alert("Yes!");
+}else{
+alert ("Nope")
+;
+} }
+
+
+document.getElementById("getPromtBack").onclick= ww;
+
+
+  </script>
+</body>
+</html>

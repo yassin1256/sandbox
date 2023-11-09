@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="utskriftID" ></p>
+  <script>
+var barn1 = "gutt";
+
+var barn2 = "jente";
+
+var barn3 = "jente";
+
+var antall_gutter = 0;
+
+var antall_jenter = 0;
+
+
+if (barn1 === "gutt") {
+  antall_gutter += 1;
+} else {
+  antall_jenter += 1;
+} if (barn2 === "gutt") {
+  antall_gutter += 1;
+} else {
+  antall_jenter += 1;
+} if (barn3 === "gutt") {
+  antall_gutter += 1;
+} else {
+  antall_jenter += 1;
+} 
+
+document.getElementById("utskriftID").innerHTML = `Antall gutter: ${antall_gutter} og antall jenter: ${antall_jenter}.`
+
+console.log(antall_jenter)
+
+
+
+/* annen måte å skrive det på
+
+<p id="utskrift"></p>
+<script>
+  const barn1 = "jente";
+  const barn2 = "gutt";
+  const barn3 = "jente";
+
+let antall_gutter = 0;
+let antall_jenter = 0;
+
+if(barn1 === "jenete") { antall_jenter++} else { antall_gutter++}
+// samme test for barn 2 med termary operator
+barn2 = "jente" ? antall_jenter++ : antall_gutter++;
+barn3 = "jente" ? antall_jenter++ : antall_gutter++;
+
+
+document.getElementById("utskrift").innerHTML = `"Gutter:"${antall_gutter} "Jenter" ${antall_jenter} "Jenter" ${antall_jenter} `;
+*/
+
+  </script>
+</body>
+</html>

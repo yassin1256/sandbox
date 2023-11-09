@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>File med index 3: <span id="movieThree"></span></p>
+  <script>
+const movieArchive = 
+["Frozen", 
+"Scarface ", 
+"Matrix", 
+"Inception ",
+ "Openheimer ",
+  "Barbie"]
+
+//skriv ut film med index 3 til nettsiden
+  const movieIndex = 3;
+document.getElementById("movieThree").innerHTML =movieArchive[movieIndex];
+//legg til en ny film (på slutten av Array):
+
+/*
+movieArchive.push("Gladiator")
+
+movieArchive.splice(1,0,"barbie");
+
+movieArchive.splice(4,1)
+
+const movieExists = movieArchive.includes("Frozen");
+*/
+console.log("frozen exists?: " + movieExists);
+
+
+
+
+  console.log(movieArchive);
+
+  </script>
+</body>
+</html>

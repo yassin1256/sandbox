@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects Cheat Sheet</title>
+</head>
+<body>
+  <p id="lectureinfo"></p>
+  <script>
+    const  lecturer = {
+      fullname: "Tore Marius Akerbæk ", 
+      birthyear: 1983,
+      email: "toremarius@gmail.com",
+      office: "D1-016"
+
+   }
+    
+   let computerSelection = ["Rock","Paper","Scissors"];
+
+function randomSelection() {
+    return computerSelection[Math.floor(Math.random() * computerSelection.length)];
+}
+
+const retur = randomSelection();
+
+const SelectedArray = randomSelection();
+
+
+console.log(retur)
+document.getElementById("lectureinfo").innerHTML = `Navn: ${lecturer.fullname} ( ${2023-lecturer.birthyear} år) , <br> Birth Year:${ lecturer.birthyear},<br> læreren kan nås på denne mailen:  ${lecturer.email},<br> dette er kontoret til læreren:  ${lecturer.office} `
+  
+
+  </script>
+</body>
+</html>

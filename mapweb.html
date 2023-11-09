@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="events" ></ul>
+
+  <script>
+
+var eventHTML = "";
+
+var tallArray = [
+   1066 ,
+   1564, 
+   1455, 
+   1346, 
+   1215
+]
+
+tallArray.map ( (box) => {
+eventHTML += `<li> ${box} </li>`
+}
+)
+
+document.getElementById("events").innerHTML = eventHTML;
+
+
+console.log(tallArray)
+tallArray.sort(function(a,b)
+{return b-a})
+</script>
+
+  </script>
+</body>
+</html>

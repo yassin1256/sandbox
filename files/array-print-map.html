@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Printout Cheat sheet</title>
+</head>
+<body>
+  <ul id="handleliste">
+
+
+ 
+
+
+
+  </ul>
+
+  <script>          // map går fra starten av arrayet til slutten. Brød ->>> Ost
+var shoppingList = ["Brød","Egg","Melk","Sukker","Ost"]
+
+var shoppingListHTML = "";
+
+ shoppingList.map(element => shoppingListHTML += `<li>${element}</li>` );
+
+
+ document.getElementById("handleliste").innerHTML = shoppingListHTML;
+//console.log()
+               //lagrer verdinen i et element og pilen er en fuksjon som sier er er hva du skal gjlre for hvert element
+//shoppingList.map(element => document.getElementById("handleliste").innerHTML += `<li>${element}</li>` )
+
+
+
+  </script>
+</body>
+</html>

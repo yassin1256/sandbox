@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h2>Nedtelling fra 10</h2>
+  <section id="countdown"></section>
+  <section id="fives"></section>
+  <script>
+
+
+
+for(let teller= 10; teller >= 0; teller--) {
+ document.getElementById("countdown").innerHTML += ` <p>   ${teller} </p>`; 
+}
+
+
+ for(let teller = 50; teller <=100; teller = teller + 5) {
+  document.getElementById("fives").innerHTML += teller + ", ";
+  }
+
+  let whileteller = 1;
+
+
+while ( whileteller< 21) {
+  document.getElementById("fives").innerHTML += `<p> ${whileteller} </p>`
+  whileteller++;  }
+
+
+  </script>
+</body>
+</html>

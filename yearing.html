@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <ul id="eventss" ></ul>
+
+
+  <script>
+let event = [
+
+{
+years: 1999,
+event: `This is what happend in somalia 1999`
+} ,
+{
+years: 2005,
+event: `This is what happend in iran 2023 when the americans started a war`
+}
+]
+
+eventHTML = "";
+
+event.map((sorting) => 
+eventHTML += `<li>${sorting.years}: ${sorting.event }</li>`)
+document.getElementById("eventss").innerHTML = eventHTML
+
+
+
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<p id="utskrift"></p>
+<body>
+  <script>
+    let ITF19019_grade = "A"
+    let ITF10511_grade = "F"
+let countA = 0;
+let countF = 0;
+    let ITF19019_passed = ITF19019_grade === "A" ? countA++ : countF++;
+   let  ITF10511_passed = ITF10511_grade === "A" ? countA++ : countF++;
+  let sum = countA;
+    document.getElementById("utskrift").innerHTML = `Du har fått karakteren A antall gnager: ${countA}
+   , men uhelldigvis så har du fått karakteren F antall gnager: ${countF}
+   <br> du har bestått ${sum} fag totalt 
+   `
+   
+   
+   ;
+  </script>
+</body>
+</html>

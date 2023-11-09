@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<p>Er myndig? <span id="above18"></span></p>
+<Strong>Suprise!</Strong>
+<body>
+  <script>
+
+const age = 19;
+const message1 = document.getElementById("message");
+
+
+if (age > 17) {
+  const above18 = document.getElementById("above18");
+above18.innerHTML = "ja" 
+message1.style.visibility = "hidden";
+} else {
+  above18.innerHTML = "nei" 
+  message.style.visibility = "visible";
+} 
+
+
+  </script>
+</body>
+</html>

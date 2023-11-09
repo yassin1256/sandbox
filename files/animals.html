@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="tekst-animal" ></p>
+  <script>
+
+
+var dyr =  
+
+ ["Dog", "Lion ", "Giraff", "Elephant", "Raven", "Swan", "Goat", "Turkey", "Ape","Penguin" ]
+
+var animals = ["Hund", "Løve", "Giraff", "Elefant", "Ravn", "Svane", "Geit", "Kalkun", "Ape", "Pingvin"]
+
+
+ 
+var index2D = 1;
+var index2A = 1;
+
+var index3D = 3;
+var index3A = 3;
+ 
+//document.getElementById("tekst-animals").innerHTML = ` ${[index2A]} er et dyr. Det heter Lion på engelsk. giraff er også et dyr, som heter giraff på engelsk `;
+document.getElementById("tekst-animal").innerHTML = `
+${animals[index2A]} er et dyr. Det heter ${dyr[1]} på engelsk. ${animals[1]} er også et dyr, som heter ${dyr[index3A]} på engelsk `;
+
+// alleDyr = dyr.map(animals => document.getElementById("tekst-animal").innerHTML += ` ${animals}`)
+
+console.log(animals.arrayaAnimals)
+ </script>
+</body>
+</html>

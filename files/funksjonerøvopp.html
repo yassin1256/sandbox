@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ <!-- <button onclick="hello()">Display ArrayStuff</button>-->
+<p id="name"></p>
+<p id="mail"></p>
+<p id="age"></p>
+<div  id="sect">
+  <p id="PP"></p>
+</div>
+
+
+<style>
+#sect {
+  display: flex;
+  flex-wrap: nowrap;
+align-content: center;
+left: 200px;
+top: 50px;
+color: cornflowerblue;
+border-radius: 10px solid black;
+border: 35px solid black;
+width:300px;
+padding: 40px;
+
+}
+
+
+#PP {
+  width: 500px; 
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 50px;
+  color: red;
+  border-radius: 5px solid black;
+};
+
+
+
+
+
+</style>
+<script>
+
+
+function start(name, birthyear, email) {
+
+  document.getElementById("name").innerHTML = name;
+  document.getElementById("mail").innerHTML = birthyear;
+document.getElementById("age").innerHTML = 2023 - birthyear;
+}
+
+start("Yassin Ibrahim",2002 ,  `
+<a href="">Yassinibraim1310@gmail.com</a>`)
+
+
+let ArrayStuff = 
+[
+
+ { FirstName: 'John',
+  LastName:'Master' ,
+  income: 'Money the bank = 9999999'
+}
+]
+let utskrift = "";
+
+function hello(){
+  for (let i = 0; i < ArrayStuff.length; i++) {
+    utskrift = `First name:${ArrayStuff[i].FirstName}<br>`
+    utskrift += `Last Name:${ArrayStuff[i].LastName}<br>`
+    utskrift += `Income: ${ArrayStuff[i].income}<br>`
+
+
+  }
+  document.getElementById("PP").innerHTML = utskrift
+}
+
+
+hello()
+
+</script>
+
+
+
+</body>
+</html>

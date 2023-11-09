@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="utskrift"></p>
+  <script>
+var ITF19019_grade = "A";
+var ITF10511_grade = "F";
+
+ITF19019_passed = "";
+ITF10511_passed = "";
+
+if (ITF19019_grade === "F") {
+  ITF19019_passed = true;
+} else {
+ ITF19019_passed = false;
+}
+
+if (ITF10511_grade === "F") {
+   ITF10511_passed = true;
+} else {
+  ITF10511_passed = false;
+}
+let countPassed = 0;
+
+if (ITF19019_passed === true) {
+  countPassed++;
+}
+if (ITF10511_passed === true) {
+  countPassed++;
+}
+
+
+
+var prinText = `Du har bestått ${countPassed} av 2 kurs`
+
+document.getElementById("utskrift").innerHTML = prinText;
+
+
+  </script>
+</body>
+</html>

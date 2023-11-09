@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dyr document</title>
+</head>
+<p><span id="animal-King"></span></p>
+<p id="dyr"></p>
+<body>
+
+
+
+<p id="antalldyr-p" ></p>
+  <script>
+     
+   var index3 = 3;
+   var index7 = 7;
+   var dyr = document.getElementById("dyr");
+    var dyr = [" Dog " ," Lion " , " Giraff " , "  Elephant " , " Raven" , "  Swan" , " Goat ", "  Turkey " , " Ape " , " Penguin  " ];
+   
+
+dyr.push(" cat ", " snake ")
+var antalldyr = dyr.length
+//console.log(antalldyr)
+
+document.getElementById("animal-King").innerHTML =`Her er det listet opp noen dyr, for eksempel ${ dyr[4] }  og ${ dyr[index7] }`;
+
+    console.log(dyr);
+
+dyr.sort()
+
+document.getElementById("antalldyr-p").innerHTML = ` <br> her er lengden av arrayet: ${antalldyr } 
+`;
+document.getElementById("antalldyr-p").innerHTML += ` <strong>  <br> ${  dyr}  </strong>`;
+print("  ".join(dyr))
+
+  </script>
+</body>
+</html>

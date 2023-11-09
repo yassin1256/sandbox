@@ -1,0 +1,147 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="telleren"></ul>
+ 
+<p id="fives" ></p>
+
+
+
+<script>
+
+  
+//Vi forbereder en variabel som vi kan bygge utskriften av listeelementer og tallene i telleren i:
+
+  
+var utskrift ="";
+
+  
+//Så lager vi en for-løkke med en variabel teller som starter på 0, øker med en for hver runde i løkken,
+
+  
+//og går så lenge teller er mindre enn 6. For hver runde legger vi til <li>tallet i teller</li> til variabelen
+
+  
+//utskrift, for å kunne legge den inn i <ul></ul> når løkken er ferdig.
+let ArrayList = [
+"Hello", 
+"Stop",
+"keep it up "
+
+]
+
+for (let b = 0; b < 50; b = b + 5) {
+  utskrift += `<li>${b}  </li>`;
+}
+
+let teller = 0;
+
+/*while (teller <= 5){
+
+  teller = teller +1 ;
+  console.log(teller);
+  
+}  
+*/
+
+
+
+
+let wt = 0;
+
+while (wt < 3) {
+  document.getElementById("fives").innerHTML += `${ArrayList[wt]}<br>`;
+  wt++;
+}
+
+
+
+
+  console.log(whileteller)
+//Skriv ut listeelementene i <ul>-en:
+
+  
+document.getElementById("telleren").innerHTML= utskrift;
+
+</script>
+
+
+
+
+
+
+<!--
+
+for (let teller = 2; teller >= 0;teller--) 
+{
+
+    utskrift +=
+ 
+`<li>${ArrayList[teller]}</li>`;
+  
+}
+
+
+
+
+
+
+
+
+  
+
+
+<body>
+
+  <h2>Nedtelling fra 10</h2>
+  <section id="countdown"></section>
+  <section id="fives"></section>
+  <script>
+
+
+
+for(let teller= 10; teller >= 0; teller--) {
+ document.getElementById("countdown").innerHTML += ` <p>   ${teller} </p>`; 
+}
+
+
+ for(let teller = 50; teller <=100; teller = teller + 5) {
+  document.getElementById("fives").innerHTML += teller + ", ";
+  }
+
+  let whileteller = 1;
+
+
+while ( whileteller< 21) {
+  document.getElementById("fives").innerHTML += `<p> ${whileteller} </p>`
+  whileteller++;  }
+
+
+  </script>
+-->
+</body>
+</html>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

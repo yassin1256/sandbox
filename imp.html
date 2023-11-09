@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween-monstre</title>
+    <!--
+        Bildeslideshow: kunne klikke på forrige og nesteknappene for å se bilder.
+        Bildene skal ligge i et array.
+        Trenger variabel for å holde rede på hvilket bilde man er på.
+    -->
+</head>
+<body>
+    
+    <h1>Halloween-monstre</h1>
+    <div>
+        <input id="show-previous-image-btn" type="button" value="Forrige">
+        <input id="show-next-image-btn" type="button" value="Neste">    
+    </div>
+    <img id="slideshow-image" src="images/cute-dracula.png">
+
+    <script>
+
+        var slideshowImage = document.getElementById("slideshow-image");
+        var showPreviousImageBtn = document.getElementById("show-previous-image-btn");
+        var showNextImageBtn = document.getElementById("show-next-image-btn");      
+        var monsterArray = ["dracula", "frankenstein", "ghost", "witch", "mummy", "wolfman"];
+       var index = 0;
+        function showPreviousImage (){
+            index--;
+            slideshowImage.src = `images/cute-${monsterArray[index]}.png`;
+        } 
+        
+        function showNextImage (){
+            index++;
+            slideshowImage.src = `images/cute-${monsterArray[index]}.png`;
+        } 
+
+
+        showPreviousImageBtn.onclick = showPreviousImage;
+        showNextImageBtn.onclick = showNextImage;
+    </script>
+    
+</body>
+</html>

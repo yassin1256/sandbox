@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <canvas id="myNewCanvas">Mitt navn er YMI</canvas>
+  
+
+  <script>
+    const canvas = document.getElementById("myNewCanvas");
+   // canvas.width = 700;
+   // canvas.height = 600;
+    const ctx = canvas.getContext("2d");
+   // ctx.fillStyle = "red"
+   // ctx.lineWidth = 9;
+    //ctx.strokeRect(150, 200, 450, 150,);
+    ctx.moveTo(0, 0);
+    
+    ctx.lineTo(300, 300);
+    ctx.stroke();
+    ctx.moveTo(0, 300);
+    ctx.lineTo(300, 0 );
+   
+   ctx.stroke();
+
+   ctx.moveTo(0, 0);
+    
+    ctx.lineTo(400, 0);
+    ctx.stroke();
+    
+   
+   ctx.stroke();
+
+//test
+
+    ctx.moveTo(300, 0);
+    
+    ctx.lineTo(300, 300);
+    ctx.stroke();
+   // test
+ ctx.moveTo(0, 0);
+    
+    ctx.lineTo(1, 300);
+    ctx.stroke();
+    ctx.moveTo(0, 150);
+    ctx.lineTo(300, 150 );
+   ctx.strokeStyle= "FF0000"
+   ctx.stroke();
+
+// avsluttet sist på tegne basisformer - path
+  </script>
+</body>
+</html>
